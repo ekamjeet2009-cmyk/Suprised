@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important Message</title><style>
+    body {
+        background: #111;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 100px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+        color: #ff4444;
+    }
+
+    p {
+        font-size: 21px;
+        line-height: 1.7;
+    }
+
+    button {
+        background: #ff4444;
+        color: white;
+        border: none;
+        padding: 15px 22px;
+        border-radius: 10px;
+        font-size: 18px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    #message {
+        margin-top: 30px;
+    }
+</style>
+
+</head><body><h1>Oye Sun</h1>
+
+<p>Ek important baat batani thi tujhe.</p>
+
+<button onclick="reveal()">Haan, bata kya baat hai</button>
+
+<div id="message"></div>
+
+<script>
+    function reveal() {
+        document.getElementById("message").innerHTML = `
+            <h1>💀</h1>
+            <p>Itne dhyan se kya dekh raha hai, Chutiye.</p>
+            <p>Jaake apna kaam kar.</p>
+        `;
+    }
+</script>
+
+</body>
+</html>
